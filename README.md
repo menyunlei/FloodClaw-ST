@@ -4,6 +4,11 @@
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
+
+<img width="1850" height="1132" alt="framework (1)" src="https://github.com/user-attachments/assets/aad462c6-d5e5-4780-adab-c08beaa5e7c6" />
+Framework of FloodClaw-ST
+
+
 FloodClaw-ST is a case-based test-time reasoning framework for sequential urban flood preparedness. It studies how large language models can adapt a macro-level flood progression prior to a local event trajectory through stepwise prediction, independent evaluation, and feedback-grounded logic revision.
 
 The project focuses on sequential flood-event reasoning: given the current flood state and previous context, predict the next key development such as physical flood response, infrastructure disruption, emergency intervention, or recovery outcome.
