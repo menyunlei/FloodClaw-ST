@@ -1,16 +1,28 @@
-FloodClaw-ST: Leveraging LLM Test-Time Spatial Reasoning for Urban Flood Preparedness
+# FloodClaw-ST: Leveraging LLM Test-Time Spatial Reasoning for Urban Flood Preparedness
+
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
+## Overview
+FloodClaw-ST is a case-based test-time reasoning framework designed for sequential urban flood preparedness[cite: 1]. Traditional Large Language Models (LLMs) struggle with the dynamic, spatial, and sequential nature of disasters[cite: 1]. This framework reframes flood reasoning as an active adaptation process, where a macro-level flood logic prior is derived from historical cases and subsequently updated through evaluator-grounded feedback at the local, event-specific level[cite: 1]. 
+
+## Key Contributions
+* **Dynamic Logic Adaptation:** Employs a macro-to-local adaptation process that extracts reusable flood logic from a pool of 1,048 historical flood events[cite: 1].
+* **Two-Agent Reasoning Protocol:** Utilizes a predictor and an independent evaluator to sequentially update the event-specific logic state via structured feedback (+1, 0, -1)[cite: 1].
+* **Comprehensive Benchmark:** Introduces a large-scale sequential benchmark of 622 complete flood trajectories, where FloodClaw-ST achieves a 62.06% Hit Rate and 49.21% Semantic Score, outperforming representative reasoning baselines (SC, MoT, GoT, TTA)[cite: 1].
+* **Cross-Regional & Cross-Lingual Portability:** Validated through a Nebraska-to-Asheville case probe and an evaluation of Arabic flood events to diagnose transferability across distinct hydrological mechanisms and linguistic contexts[cite: 1].
+
+## Framework Architecture
+1. **Macro-Scale Case Logic Derivation (The Prior):** Synthesizes knowledge from a macro pool of historical flood events to induce a general spatial and physical reasoning schema[cite: 1].
+2. **Micro-Scale Test-Time Case Adaptation (Daily Loop):** Given a target event, the framework applies the prior and updates it step-by-step using daily observations and evaluator feedback, maintaining causal continuity across meteorological triggers, infrastructure states, interventions, and downstream impacts[cite: 1].
+
+## Evaluation Settings
+* **Backward Reasoning:** Retrodiction on the time-shifted 2019 Nebraska anchor case[cite: 1].
+* **Forward Transfer:** Stepwise prediction on the unseen Asheville flash flood case[cite: 1].
+* **Large-Scale Validation:** Sequential hidden-next-event prediction on 622 trajectories[cite: 1].
+* **Cross-Lingual Portability:** Deployment on 100 Arabic flood cases utilizing localized models (e.g., Jais) to test factual and cultural grounding[cite: 1].
 
 
 
-## 🎯 项目目标
-
-使用逻辑规则帮助LLM更好地预测洪水事件序列。通过显式编码因果关系，提升预测准确率。
-
-## ✨ 核心成果
-
-- **性能提升：** +57% (with logic) 和 +85.71% (without logic)
-- **规则优化：** 7条针对Asheville洪水场景的优化规则
-- **易于使用：** 简单的命令和完整的文档
 
 ## 🚀 快速开始
 
@@ -299,3 +311,13 @@ A: 修改 `--target-jsonl` 参数
 
 **项目状态：** ✅ 完成并可用
 **最后更新：** 2026-03-20
+
+## Citation
+If you find this framework or dataset helpful for your research, please consider citing:
+```bibtex
+@article{men2026floodclaw,
+  title={FloodClaw-ST: Leveraging LLM Test-Time Spatial Reasoning for Urban Flood Preparedness},
+  author={Men, Yunlei and He, Xiaoli and Mohamed, Wiam Osman Hassan and Liu, Xiaoli and KAN, Ge Lin and Li, Hao},
+  journal={GIScience & Remote Sensing},
+  year={2026}
+}
