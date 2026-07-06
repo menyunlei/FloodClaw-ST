@@ -1,6 +1,5 @@
 # FloodClaw-ST: Leveraging LLM Test-Time Spatial Reasoning for Urban Flood Preparedness
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 ## Overview
 FloodClaw-ST is a case-based test-time reasoning framework designed for sequential urban flood preparedness[cite: 1]. Traditional Large Language Models (LLMs) struggle with the dynamic, spatial, and sequential nature of disasters[cite: 1]. This framework reframes flood reasoning as an active adaptation process, where a macro-level flood logic prior is derived from historical cases and subsequently updated through evaluator-grounded feedback at the local, event-specific level[cite: 1]. 
