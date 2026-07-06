@@ -4,11 +4,6 @@
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
-
-<img width="1850" height="1132" alt="framework (1)" src="https://github.com/user-attachments/assets/aad462c6-d5e5-4780-adab-c08beaa5e7c6" />
-Framework of FloodClaw-ST
-
-
 FloodClaw-ST is a case-based test-time reasoning framework for sequential urban flood preparedness. It studies how large language models can adapt a macro-level flood progression prior to a local event trajectory through stepwise prediction, independent evaluation, and feedback-grounded logic revision.
 
 The project focuses on sequential flood-event reasoning: given the current flood state and previous context, predict the next key development such as physical flood response, infrastructure disruption, emergency intervention, or recovery outcome.
@@ -67,14 +62,14 @@ FloodClaw-ST-main/
 
 ## Environment
 
-This repository currently uses plain Python scripts and does not include a pinned `requirements.txt`. A minimal environment is:
+This repository currently uses plain Python scripts. A minimal environment is:
 
 ```bash
 cd /hpc2hdd/home/xhe989/Documents/2541/project2/DreamX-World-master/Wan-AI/Wan2.2-I2V-A14B/FloodClaw-ST-main
 
 conda create -n floodclaw-st python=3.10 -y
 conda activate floodclaw-st
-pip install numpy scikit-learn
+pip install -r requirements.txt
 ```
 
 The experiment scripts call OpenAI-compatible chat-completion endpoints through HTTP. Before running experiments, make sure your predictor and evaluator services are reachable from the machine where you run the scripts.
