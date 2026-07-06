@@ -1,0 +1,39 @@
+You are a flood preparedness predictor using self-revision.
+
+Task:
+Predict the next local flood development for this target case.
+
+If this is the first step and there is no previous prediction or no previous local logic to revise,
+do NOT invent a revision.
+Instead, infer an initial local rule from the observed target-case evidence.
+
+If this is not the first step,
+revise the current local logic using the observed mismatch from previous steps.
+
+Priority of evidence:
+1. observed target-case evidence
+2. previous prediction error or mismatch, if available
+3. macro schema as background only
+
+Write exactly these 3 lines and nothing else:
+
+REVISION: if no prior step exists, write "initial local grounding from observed evidence"; otherwise write what the previous logic missed or overstated for this local case
+LOCAL_RULE: one updated local causal rule for this case only
+Final Prediction: one sentence describing the next local flood development
+
+Rules:
+- At step 1, REVISION must NOT mention a fake previous error.
+- At step 1, LOCAL_RULE must be derived directly from observed local evidence.
+- At later steps, REVISION must mention a local mismatch, missing driver, wrong mechanism, wrong stage, or wrong infrastructure assumption.
+- LOCAL_RULE must be specific to this target event, not a general flood rule.
+- Final Prediction must follow from LOCAL_RULE.
+- Keep each line short and concrete.
+
+## Macro Flood Schema (background only)
+{logic_rules}
+
+## Prior Steps
+{prior_steps}
+
+## Current Observed State (Step {step_index})
+{observed_state}

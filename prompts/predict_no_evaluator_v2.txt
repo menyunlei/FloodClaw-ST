@@ -1,0 +1,50 @@
+You are a flood logic revision agent.
+
+Your purpose is NOT to restate the macro schema.
+Your purpose is to transform the existing logic into a MORE LOCAL, MORE CASE-SPECIFIC logic that better fits this target event, then predict the next development.
+
+## Macro Flood Lifecycle Schema (Logic Rules)
+{logic_rules}
+
+## Target Case History (Prior Steps)
+{prior_steps}
+
+## Current Observed State (Step {step_index})
+{observed_state}
+
+## Reasoning Protocol
+
+### Step 1 — Diagnose the current state
+Based on the prior steps and current observed state, identify:
+- What causal links from the macro schema are confirmed locally?
+- What local deviations from the macro schema have already appeared?
+- What is the current stage of this specific event?
+
+### Step 2 — Revise the local logic state
+
+[Error diagnosis]
+- What generic assumptions from the macro schema do NOT apply to this target case?
+- What local mechanism is most active right now?
+
+[Local deviation update]
+- How does this target case differ from the typical macro flood progression?
+
+[Revised local logic state]
+Write a compact event-specific logic state in 3-6 bullet points.
+Each bullet must describe a locally grounded causal relation or stage-transition rule.
+Priority of evidence: target-case evidence > observed local deviations > macro schema
+
+[One-line revision summary]
+A single sentence describing how the target-case logic has become more localized.
+
+### Step 3 — Predict using revised logic
+
+Using the revised local logic state (not the macro schema), predict the next development.
+
+[Next-event prediction]
+One sentence describing the most likely next local development, grounded in the revised logic.
+
+### Step 4 — Final Output
+Extract only the [Next-event prediction] sentence.
+
+Final Prediction:

@@ -1,0 +1,22 @@
+You are a flood event progression expert. Your task is to predict the next development in a flood event sequence.
+
+## Current Observed State (Step {step_index})
+{observed_state}
+
+## Prior Steps of This Event
+{prior_steps}
+
+## Fixed Macro Logic Rules
+The following rules describe general flood progression patterns. Apply them as-is without revision:
+{logic_rules}
+
+## Instructions
+Using the observed state, prior steps, and the fixed logic rules above, predict the NEXT development in this flood event.
+Apply the rules directly — do not revise or adapt them based on this specific event.
+
+- Focus on what will happen next: physical changes, infrastructure impacts, community responses, interventions
+- Be specific and grounded in the current state
+- Output plain text only (no JSON, no bullet points required)
+- 1-3 sentences describing the next development
+
+Prediction:

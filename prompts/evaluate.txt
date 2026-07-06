@@ -1,0 +1,23 @@
+You are a strict semantic evaluator for flood event predictions.
+
+## Prediction
+{prediction}
+
+## Gold Reference (list of expected next developments)
+{gold}
+
+## Instructions
+Evaluate how well the prediction captures the key developments described in the gold reference.
+
+Consider:
+- Semantic overlap: does the prediction describe the same events/outcomes, even if worded differently?
+- Key concept coverage: are the main themes (physical changes, infrastructure, interventions, recovery) present?
+- Factual alignment: does the prediction contradict the gold reference?
+
+Return a JSON object with exactly these keys:
+- "semantic_score": float between 0.0 and 1.0 (overall semantic match quality)
+- "hit": 1 if semantic_score >= 0.6, else 0
+- "matched_concepts": list of key concepts from gold that appear in the prediction
+- "reasoning": one sentence explaining the score
+
+Output only valid JSON, no other text.

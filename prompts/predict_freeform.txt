@@ -1,0 +1,21 @@
+You are a flood event progression expert. Your task is to predict the next development in a flood event sequence.
+
+## Current Observed State (Step {step_index})
+{observed_state}
+
+## Prior Steps of This Event
+{prior_steps}
+
+## Instructions
+Reflect freely on the flood event trajectory so far. Consider:
+- What patterns are emerging?
+- What typically happens next in events like this?
+- What are the most critical uncertainties?
+
+After your reflection, provide your prediction of the NEXT development.
+
+- Focus on what will happen next: physical changes, infrastructure impacts, community responses, interventions
+- Output plain text only (no JSON)
+- 1-3 sentences describing the next development
+
+Prediction:

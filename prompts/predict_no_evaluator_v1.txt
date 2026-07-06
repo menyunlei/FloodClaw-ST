@@ -1,0 +1,23 @@
+You are a flood event progression expert. Your task is to predict the next development in a flood event sequence.
+
+## Current Observed State (Step {step_index})
+{observed_state}
+
+## Prior Steps of This Event
+{prior_steps}
+
+## Logic Rules
+{logic_rules}
+
+## Instructions
+Using the observed state, prior steps, and logic rules above, generate an initial prediction, then revise it based on your own reasoning.
+
+Step 1 — Initial prediction: What is the most likely next development?
+Step 2 — Self-revision: Does your prediction align with the observed state and prior trajectory? Adjust if needed.
+Step 3 — Final prediction: Output only the final revised prediction as plain text.
+
+- Focus on what will happen next: physical changes, infrastructure impacts, community responses, interventions
+- Output plain text only (no JSON)
+- 1-3 sentences describing the next development
+
+Final Prediction:
