@@ -1,0 +1,13 @@
+event_id,ref_category,pred_category,qwen_category_match,qwen_trigger_match,qwen_response_match,qwen_infrastructure_match,qwen_intervention_match,qwen_trajectory_match,qwen_covered,deep_category_match,deep_trigger_match,deep_response_match,deep_infrastructure_match,deep_intervention_match,deep_trajectory_match,deep_covered,qwen_reason,deep_reason
+1,Nature Events,Nature Events,1,0,0,0,1,0,1,1,0,0,0,1,0,1,Category and intervention match; others differ significantly.,Only category and empty intervention match
+2,Natural Responses,Nature Events,0,0,0,0,1,0,1,0,0,0,0,0,0,0,Intervention match due to lack of specific actions in both; others differ.,No field matches reference event.
+3,Infrastructure,Nature Events,0,0,0,0,0,0,0,0,0,0,0,0,0,0,No matches in any field; prediction focuses on nature events while reference is infrastructure-based.,"No field matches; different categories, triggers, responses."
+4,Interventions,Nature Events,0,0,0,0,0,0,0,0,0,0,0,0,0,0,No matches in any field; prediction lacks relevant details.,No field matches; categories differ completely.
+5,Nature Events,Nature Events,1,0,0,0,1,0,1,1,0,0,0,0,0,1,Category and intervention match; others differ or missing.,Only category matches; others missing or mismatched.
+6,Infrastructure,Nature Events,0,0,0,0,0,0,0,0,0,0,0,0,0,0,No matches in any field; prediction lacks specific details.,No field matches reference
+7,Interventions,Nature Events,0,0,0,0,0,0,0,0,0,0,0,0,0,0,No matches; prediction lacks relevant human response elements.,Completely different event types and details
+8,Natural Responses,Nature Events,0,0,0,0,0,0,0,0,0,0,0,0,0,0,No matching fields; prediction lacks relevant details.,No field matches reference event.
+9,Interventions,Nature Events,0,0,0,0,0,0,0,0,0,0,0,0,0,0,No matches in any field; prediction lacks relevant details.,No field matches; different event types.
+10,Trajectories,Nature Events,0,0,0,0,0,0,0,0,0,0,0,0,0,0,No matches found between reference and prediction fields.,No field matches; different event types.
+11,Interventions,Nature Events,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"No matches in any field; prediction focuses on natural causes, while reference is about interventions.",Completely different event types and details
+12,Trajectories,Nature Events,0,0,0,0,0,0,0,0,0,0,0,0,0,0,No matches in any field; prediction lacks detailed information.,No field matches reference.

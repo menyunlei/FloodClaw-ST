@@ -1,0 +1,13 @@
+event_id,ref_category,pred_category,category_match,trigger_match,response_match,infrastructure_match,intervention_match,trajectory_match,covered
+1,Nature Events,Nature Events,1,0,0,0,0,0,1
+2,Natural Responses,Nature Events,0,0,0,0,0,0,0
+3,Infrastructure,Nature Events,0,0,0,0,0,0,0
+4,Interventions,Nature Events,0,0,0,0,0,0,0
+5,Nature Events,Nature Events,1,0,0,0,0,0,1
+6,Infrastructure,Nature Events,0,0,0,0,0,0,0
+7,Interventions,Nature Events,0,0,0,0,0,0,0
+8,Natural Responses,Nature Events,0,0,0,0,0,0,0
+9,Interventions,Nature Events,0,0,0,0,0,0,0
+10,Trajectories,Nature Events,0,0,0,0,0,0,0
+11,Interventions,Nature Events,0,0,0,0,0,0,0
+12,Trajectories,Nature Events,0,0,0,0,0,0,0

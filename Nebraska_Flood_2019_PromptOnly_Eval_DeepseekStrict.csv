@@ -1,0 +1,13 @@
+event_id,ref_category,pred_category,category_match,trigger_match,response_match,infrastructure_match,intervention_match,trajectory_match,covered,short_reason
+1,Nature Events,Nature Events,1,0,0,0,0,0,1,Category matches semantically. Trigger mismatch due to different details. Empty prediction fields for response/infrastructure/intervention/trajectory yield 0 matches. Covered is 1 due to category_match.
+2,Natural Responses,Nature Events,0,0,0,0,0,0,0,No semantic category match; all other fields have empty predictions or references
+3,Infrastructure,Nature Events,0,0,0,0,0,0,0,Category mismatch; all prediction fields except trigger are empty; trigger mismatch due to different causes
+4,Interventions,Nature Events,0,0,0,0,0,0,0,Categories not equivalent; prediction has empty response/infrastructure/intervention/trajectory; trigger semantics differ
+5,Nature Events,Nature Events,1,0,0,0,0,0,1,"Category matches, trigger mismatch due to different mechanisms, empty fields in prediction for response/infrastructure/intervention/trajectory, covered due to category_match=1"
+6,Infrastructure,Nature Events,0,0,0,0,0,0,0,Category mismatch; prediction has empty response/infrastructure/intervention/trajectory; trigger mismatch
+7,Interventions,Nature Events,0,0,0,0,0,0,0,Categories not equivalent; all other fields have empty predictions or mismatched triggers
+8,Natural Responses,Nature Events,0,0,0,0,0,0,0,No semantic category match; all other fields have empty predictions or mismatched triggers
+9,Interventions,Nature Events,0,0,0,0,0,0,0,Categories not equivalent; all prediction fields except trigger are empty; trigger content mismatched
+10,Trajectories,Nature Events,0,0,0,0,0,0,0,Categories not equivalent; all other fields have at least one empty
+11,Interventions,Nature Events,0,0,0,0,0,0,0,Categories not equivalent; all prediction fields except trigger are empty; trigger content does not match reference
+12,Trajectories,Nature Events,0,0,0,0,0,0,0,Category mismatch; all prediction fields except trigger are empty; trigger content differs

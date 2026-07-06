@@ -1,0 +1,13 @@
+event_id,ref_category,pred_category,qwen_category_match,deepseek_category_match,qwen_covered,deepseek_covered,qwen_reason,deepseek_reason
+1,Nature Events,Nature Events,1,1,1,1,Category matches; other details differ significantly.,"Category and trigger match, others missing."
+2,Natural Responses,Nature Events,0,0,0,0,No matching elements between reference and prediction.,"No matches: different categories, triggers, responses, infrastructure, interventions, trajectories"
+3,Infrastructure,Nature Events,0,0,0,0,No matching elements between reference and prediction.,No field matches between reference and prediction
+4,Interventions,Nature Events,0,0,0,0,No matching elements between reference and prediction.,No matches: different categories and event details
+5,Nature Events,Nature Events,1,1,1,1,Only category matches; other details differ significantly.,"Only category matches; trigger differs, others missing."
+6,Infrastructure,Nature Events,0,0,0,0,No matching elements between reference and prediction.,"No matches: category, trigger, response, infrastructure, intervention, trajectory all differ."
+7,Interventions,Nature Events,0,0,0,0,"No matches; prediction focuses on natural phenomena, not human interventions.",Completely different event categories and details
+8,Natural Responses,Nature Events,0,0,0,0,No matching elements between reference and prediction.,No matches in any event aspects
+9,Interventions,Nature Events,0,0,0,0,No matching elements between reference and prediction.,No matches; category and all fields differ.
+10,Trajectories,Nature Events,0,0,0,0,No matching elements between reference and prediction.,"No matches: category, trigger, response, infrastructure, intervention, trajectory all differ."
+11,Interventions,Nature Events,0,0,0,0,No matching elements between reference and prediction.,No matching elements between interventions and natural events
+12,Trajectories,Nature Events,0,0,0,0,No matching elements between reference and prediction.,No matches in any category
